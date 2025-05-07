@@ -1,1521 +1,991 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Souvik Nandi Resume</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script> -->
     <style>
-      * {
-        text-size-adjust: 80% !important;
-      }
+        * {
+            text-size-adjust: 80% !important;
+        }
 
-      body {
-        margin: 0 auto;
-        font-family: Arial, sans-serif;
-      }
-      .skill-item {
-        display: flex;
-        background-color: rgb(2 188 255 / 15%);
-        padding: 5px 10px;
-        border-radius: 20px;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-      }
-      .skill-subsection {
-        margin: 10px;
-        display: flex;
-        flex-wrap: wrap;
-      }
+        body {
+            margin: 0 auto;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+
+        .skill-item {
+            display: flex;
+            background-color: rgb(2 188 255 / 15%);
+            padding: 5px 10px;
+            border-radius: 20px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .skill-header {
+            flex: 1;
+        }
+
+        .skill-section {
+            display: flex;
+        }
+
+        .skill-subsection {
+            display: flex;
+            flex-wrap: wrap;
+            flex: 4;
+        }
+
+        .bg-blue-100 {
+            background-color: rgb(0 119 182 / 26%) !important;
+        }
+
+        .text-blue-800 {
+            color: rgb(0 119 182)  !important;
+        }
+
+        .text-blue-600 {
+            color: rgb(0 119 182)  !important;
+        }
+
+        .border-blue-600 {
+            border-color: rgb(0 119 182) !important;
+        }
+        
+        .text-base {
+            font-size: 0.9rem !important;
+        }
+        
+        .summary-text{
+            line-height: 1.3rem !important;
+        }
+
+        .cert-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 1.5rem;
+            padding: 20px;
+        }
+
+        .cert-card {
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-left: 6px solid #0078d4;
+        }
+
+        .cert-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .cert-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #333;
+        }
+
+        .cert-org {
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .cert-section {
+            margin-top: 10px;
+            padding-left: 15px;
+        }
+
+        .cert-id {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: #e5f1fb;
+            color: #0078d4;
+            padding: 3px 8px;
+            border-radius: 5px;
+            font-size: 0.8rem;
+            margin-right: 5px;
+        }
     </style>
+</head>
 
-    <style>
-      .cert-container {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-        gap: 1.5rem;
-        padding: 20px;
-      }
-
-      .cert-card {
-        background: #ffffff;
-        border-radius: 16px;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-        padding: 20px;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        border-left: 6px solid #0078d4;
-      }
-
-      .cert-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-      }
-
-      .cert-title {
-        font-size: 1.25rem;
-        font-weight: 700;
-        color: #333;
-      }
-
-      .cert-org {
-        color: #555;
-        margin-bottom: 10px;
-      }
-
-      .cert-section {
-        margin-top: 10px;
-        padding-left: 15px;
-      }
-
-      .cert-id {
-        font-size: 0.9rem;
-        color: #666;
-      }
-
-      .badge {
-        display: inline-block;
-        background-color: #e5f1fb;
-        color: #0078d4;
-        padding: 3px 8px;
-        border-radius: 5px;
-        font-size: 0.8rem;
-        margin-right: 5px;
-      }
-    </style>
-  </head>
-  <body class="bg-white text-gray-800 p-6">
+<body class="bg-white text-gray-800 p-6">
     <div class="container max-w-screen-md mx-auto">
-      <!-- Header -->
-      <div class="mb-6">
-        <div class="flex items-start border-b-2 border-blue-600 pb-4">
-          <!-- <div class="relative mr-4">
+        <!-- Header -->
+        <div class="mb-6">
+            <div class="flex items-start border-b-2 border-blue-600 pb-4">
+                <!-- <div class="relative mr-4">
                     <img src="https://lh3.googleusercontent.com/a/ACg8ocKYeqpCShdT160UB389n3Zdn21sEy65oX0xZUhsGh5IEZQBLl1TKw=s96-c" alt="Profile" class="w-16 h-16 object-cover rounded-full border-2 border-blue-600 shadow-sm">
                 </div> -->
-          <div class="flex-1 text-center">
-            <h1 class="text-3xl font-bold text-blue-600 mb-1">SOUVIK NANDI</h1>
-            <p class="text-sm font-bold text-gray-800 mb-2">
-              Senior Software Engineer | AI & Automation Enthusiast | Azure &
-              .NET Expert
-            </p>
-            <div class="flex flex-wrap gap-2 text-sm justify-center">
-              <span
-                class="inline-block bg-gray-100 text-gray-800 text-xs font-semibold px-2 py-1 rounded"
-              >
-                <i class="fas fa-location-dot mr-1 text-blue-600"></i>India
-              </span>
-              <span
-                class="inline-block bg-gray-100 text-gray-800 text-xs font-semibold px-2 py-1 rounded"
-              >
-                <i class="fas fa-square-phone mr-1 text-blue-600"></i>
-                <a href="tel:+919831151765">+91 9831151765</a>
-              </span>
-              <span
-                class="inline-block bg-gray-100 text-gray-800 text-xs font-semibold px-2 py-1 rounded"
-              >
-                <i class="fas fa-square-phone mr-1 text-blue-600"></i>
-                <a href="tel:+919831151765">+91 8617790074</a>
-              </span>
-              <span
-                class="inline-block bg-gray-100 text-gray-800 text-xs font-semibold px-2 py-1 rounded"
-              >
-                <i class="fas fa-link mr-1 text-blue-600"></i>
-                <a
-                  href="https://souviknandi.com"
-                  target="_blank"
-                  class="text-blue-600 hover:underline"
-                  >souviknandi.com</a
-                >
-              </span>
-              <span
-                class="inline-block bg-gray-100 text-gray-800 text-xs font-semibold px-2 py-1 rounded"
-              >
-                <i class="fab fa-linkedin mr-1 text-blue-600"></i>
-                <a
-                  href="https://www.linkedin.com/in/souvik-nandi/"
-                  target="_blank"
-                  class="text-blue-600 hover:underline"
-                  >linkedin.com/in/souvik-nandi</a
-                >
-              </span>
+                <div class="flex-1 text-center">
+                    <h1 class="text-2xl font-bold text-blue-600 mb-1">SOUVIK NANDI</h1>
+                    <p class="text-xs font-bold text-gray-800 mb-2">
+                        Senior Software Engineer | AI & Automation Enthusiast | Azure &
+                        .NET Expert
+                    </p>
+                    <div class="flex flex-wrap gap-2 text-xs justify-center">
+                        <span class="inline-block bg-gray-100 text-gray-800 text-xs font-semibold px-2 py-1 rounded">
+                            <i class="fas fa-location-dot mr-1 text-blue-600"></i>India
+                        </span>
+                        <span class="inline-block bg-gray-100 text-gray-800 text-xs font-semibold px-2 py-1 rounded">
+                            <i class="fas fa-square-phone mr-1 text-blue-600"></i>
+                            <a href="tel:+919831151765">+91 9831151765</a>
+                        </span>
+                        <span class="inline-block bg-gray-100 text-gray-800 text-xs font-semibold px-2 py-1 rounded">
+                            <i class="fas fa-square-phone mr-1 text-blue-600"></i>
+                            <a href="tel:+919831151765">+91 8617790074</a>
+                        </span>
+                        <span class="inline-block bg-gray-100 text-gray-800 text-xs font-semibold px-2 py-1 rounded">
+                            <i class="fas fa-link mr-1 text-blue-600"></i>
+                            <a href="https://souviknandi.com" target="_blank"
+                                class="text-blue-600 hover:underline">souviknandi.com</a>
+                        </span>
+                        <span class="inline-block bg-gray-100 text-gray-800 text-xs font-semibold px-2 py-1 rounded">
+                            <i class="fab fa-linkedin mr-1 text-blue-600"></i>
+                            <a href="https://www.linkedin.com/in/souvik-nandi/" target="_blank"
+                                class="text-blue-600 hover:underline">linkedin.com/in/souvik-nandi</a>
+                        </span>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
 
-      <!-- Summary -->
-      <section class="mb-6">
-        <div class="flex items-center mb-2">
-          <h2 class="text-lg font-bold text-blue-600 flex items-center">
-            <i class="fas fa-user mr-2 text-blue-600"></i>Summary
-          </h2>
-        </div>
-        <hr class="border-b border-grey-600 mb-2" />
-        <p class="text-sm">
-          Results-driven Senior Software Engineer with 7+ years of experience
-          building scalable backend systems and enterprise-grade applications.
-          Currently at Microsoft, driving cloud-native solutions and AI-powered
-          innovations. Specialized in:
-          <span
-            class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded mr-1"
-            >Azure</span
-          >
-          <span
-            class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded mr-1"
-            >.NET (C#)</span
-          >
-          <span
-            class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded mr-1"
-            >Python</span
-          >
-          <span
-            class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded mr-1"
-            >Azure AI Services</span
-          >
-          <span
-            class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded mr-1"
-            >LLM Integration</span
-          >
-          <span
-            class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded mr-1"
-            >Prompt Engineering</span
-          >. Proven track record in leading complex projects, improving
-          performance, and resolving production issues. Designed intelligent
-          backend workflows integrating LLMs for document analysis,
-          recommendation engines, and AI-based process optimization.
-        </p>
-      </section>
-
-      <!-- Skills -->
-      <section class="mb-6">
-        <h2 class="text-lg font-bold text-blue-600 pb-1">
-          <i class="fas fa-screwdriver-wrench mr-2 text-blue-600"></i>Skills
-        </h2>
-        <hr class="border-b border-grey-600 mb-2" />
-        <div class="text-sm">
-          <div class="mb-2">
-            <h3 class="font-bold text-xs text-gray-800">
-              Programming Languages, Frameworks & Libraries
-            </h3>
-            <ul class="list-none gap-2 skill-subsection">
-              <li class="skill-item font-bold text-xs">Python</li>
-              <li class="skill-item font-bold text-xs">JavaScript</li>
-              <li class="skill-item font-bold text-xs">C#</li>
-              <li class="skill-item font-bold text-xs">.NET Core</li>
-              <li class="skill-item font-bold text-xs">TensorFlow</li>
-              <li class="skill-item font-bold text-xs">PyTorch</li>
-              <li class="skill-item font-bold text-xs">Scikit-learn</li>
-              <li class="skill-item font-bold text-xs">Pandas</li>
-              <li class="skill-item font-bold text-xs">NumPy</li>
-            </ul>
-          </div>
-          <div class="mb-2">
-            <h3 class="font-bold text-xs text-gray-800">Cloud & DevOps</h3>
-            <ul class="list-none gap-2 skill-subsection">
-              <li class="skill-item font-bold text-xs">Azure AI Services</li>
-              <li class="skill-item font-bold text-xs">Azure Service Bus</li>
-              <li class="skill-item font-bold text-xs">Azure CosmosDB</li>
-              <li class="skill-item font-bold text-xs">Azure AI Search</li>
-              <li class="skill-item font-bold text-xs">
-                CI/CD Azure Pipelines
-              </li>
-            </ul>
-          </div>
-          <div class="mb-2">
-            <h3 class="font-bold text-xs text-gray-800">AI & Data Science</h3>
-            <ul class="list-none gap-2 skill-subsection">
-              <li class="skill-item font-bold text-xs">LLM</li>
-              <li class="skill-item font-bold text-xs">LangChain</li>
-              <li class="skill-item font-bold text-xs">
-                HFT (Hugging Face Transformers)
-              </li>
-              <li class="skill-item font-bold text-xs">Prompt Engineering</li>
-              <li class="skill-item font-bold text-xs">Feature Engineering</li>
-            </ul>
-          </div>
-          <div class="mb-2">
-            <h3 class="font-bold text-xs text-gray-800">
-              Other Tools & Concepts
-            </h3>
-            <ul class="list-none gap-2 skill-subsection">
-              <li class="skill-item font-bold text-xs">SQL</li>
-              <li class="skill-item font-bold text-xs">HTML/CSS</li>
-              <li class="skill-item font-bold text-xs">GIT</li>
-              <li class="skill-item font-bold text-xs">REST & gRPC APIs</li>
-              <li class="skill-item font-bold text-xs">
-                Distributed Systems Design
-              </li>
-              <li class="skill-item font-bold text-xs">
-                Microservices Architecture
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <!-- Experience -->
-      <section class="mb-6">
-        <h2 class="text-lg font-bold text-blue-600 pb-1">
-          <i class="fas fa-arrow-trend-up mr-2 text-blue-600"></i>Experience
-        </h2>
-        <hr class="border-b border-grey-600 mb-4" />
-
-        <!-- Microsoft - Software Engineer 2 -->
-        <div class="mb-6">
-          <div class="flex items-center justify-between mb-2">
-            <div class="flex items-center">
-              <img
-                src="images/logos/microsoft_logo.jpg"
-                alt="Microsoft Logo"
-                class="h-12 w-12 mr-2"
-              />
-              <div>
-                <h3 class="text-base font-bold text-gray-800">Microsoft</h3>
-                <p class="text-sm font-semibold text-gray-600">
-                  Software Engineer 2
-                </p>
-              </div>
+        <!-- Summary -->
+        <section class="mb-6">
+            <div class="flex items-center mb-2">
+                <h2 class="text-md font-bold text-blue-600 flex items-center">
+                    <i class="fas fa-user mr-2 text-blue-600"></i>Summary
+                </h2>
             </div>
-            <p class="text-sm text-gray-600">
-              Dec 2022 – Present | Hyderabad, India
+            <hr class="border-b border-grey-600 mb-2" />
+            <p class="text-xs summary-text">
+                Results-driven Senior Software Engineer with 7+ years of experience
+                building scalable backend systems and enterprise-grade applications.
+                Currently at Microsoft, driving cloud-native solutions and AI-powered
+                innovations. Specialized in:
+                <span class="text-blue-800 text-xs font-semibold">Azure</span>, 
+                <span class="text-blue-800 text-xs font-semibold">.NET (C#)</span>, 
+                <span class="text-blue-800 text-xs font-semibold">Python</span>, 
+                <span class="text-blue-800 text-xs font-semibold">Azure AI Services</span>, 
+                <span class="text-blue-800 text-xs font-semibold">LLM Integration</span>, 
+                <span class="text-blue-800 text-xs font-semibold">Prompt Engineering</span>.
+                Proven track record in leading complex projects, improving
+                performance, and resolving production issues. Designed intelligent
+                backend workflows integrating LLMs for document analysis,
+                recommendation engines, and AI-based process optimization.
             </p>
-          </div>
-          <ul class="text-sm space-y-2">
-            <li class="flex items-start">
-              <span class="text-blue-600 mr-2">•</span>
-              <span
-                >Architected and led the
-                <span class="font-bold">Azure Event Management platform</span>,
-                enabling intelligent auto-healing and self-diagnostic
-                capabilities using AI-based log and telemetry anomaly
-                detection.</span
-              >
-            </li>
-            <li class="flex items-start">
-              <span class="text-blue-600 mr-2">•</span>
-              <span
-                >Developed a
-                <span class="font-bold">Smart Subscription system</span>
-                integrating Azure AI Search and OpenAI, achieving automated
-                event correlation and reducing triage time by
-                <span class="font-bold text-blue-600">60%</span>.</span
-              >
-            </li>
-            <li class="flex items-start">
-              <span class="text-blue-600 mr-2">•</span>
-              <span
-                >Built an internal AI assistant using Azure OpenAI and Teams
-                transcripts, improving engineering onboarding and support
-                productivity by
-                <span class="font-bold text-blue-600">40%</span>.</span
-              >
-            </li>
-            <li class="flex items-start">
-              <span class="text-blue-600 mr-2">•</span>
-              <span
-                >Led architectural design for privacy-resilient distributed
-                systems using
-                <span class="font-bold">C#, .NET, and Cosmos DB</span>,
-                integrating ML-based throttling for high-load services.</span
-              >
-            </li>
-            <li class="flex items-start">
-              <span class="text-blue-600 mr-2">•</span>
-              <span
-                >Implemented a secure dynamic execution engine for
-                customer-submitted code in isolated environments with Azure ML
-                model selection for runtime decision-making.</span
-              >
-            </li>
-            <li class="flex items-start">
-              <span class="text-blue-600 mr-2">•</span>
-              <span
-                >Proficient in threat modeling, performance tuning, and seamless
-                integration of
-                <span class="font-bold"
-                  >AI pipelines in cloud-native architectures</span
-                >.</span
-              >
-            </li>
-          </ul>
-        </div>
+        </section>
 
-        <!-- Microsoft - Software Engineer -->
-        <div class="mb-6">
-          <div class="flex items-center justify-between mb-2">
-            <div class="flex items-center">
-              <img
-                src="images/logos/microsoft_logo.jpg"
-                alt="Microsoft Logo"
-                class="h-12 w-12 mr-2"
-              />
-              <div>
-                <h3 class="text-base font-bold text-gray-800">Microsoft</h3>
-                <p class="text-sm font-semibold text-gray-600">
-                  Software Engineer
-                </p>
-              </div>
+        <!-- Skills -->
+        <section class="mb-6">
+            <h2 class="text-md font-bold text-blue-600 pb-1">
+                <i class="fas fa-screwdriver-wrench mr-2 text-blue-600"></i>Skills
+            </h2>
+            <hr class="border-b border-grey-600 mb-2" />
+            <div class="text-xs">
+                <div class="mb-2 skill-section">
+                    <h3 class="font-bold text-xs text-gray-800 mr-2 skill-header">Languages & Libraries:</h3>
+                    <ul class="list-none skill-subsection">
+                        <li class="text-blue-800 text-xs font-semibold mr-4">Python</li>
+                        <li class="text-blue-800 text-xs font-semibold mr-4">JavaScript</li>
+                        <li class="text-blue-800 text-xs font-semibold mr-4">C#</li>
+                        <li class="text-blue-800 text-xs font-semibold mr-4">.NET Core</li>
+                        <li class="text-blue-800 text-xs font-semibold mr-4">TensorFlow</li>
+                        <li class="text-blue-800 text-xs font-semibold mr-4">PyTorch</li>
+                        <li class="text-blue-800 text-xs font-semibold mr-4">Scikit-learn</li>
+                        <li class="text-blue-800 text-xs font-semibold mr-4">Pandas</li>
+                        <li class="text-blue-800 text-xs font-semibold mr-4">NumPy</li>
+                    </ul>
+                </div>
+                <div class="mb-2 skill-section">
+                    <h3 class="font-bold text-xs text-gray-800 mr-2 skill-header">Cloud & DevOps: </h3>
+                    <ul class="list-none skill-subsection">
+                        <li class="text-blue-800 text-xs font-semibold mr-4">Azure AI Services</li>
+                        <li class="text-blue-800 text-xs font-semibold mr-4">Azure Service Bus</li>
+                        <li class="text-blue-800 text-xs font-semibold mr-4">Azure CosmosDB</li>
+                        <li class="text-blue-800 text-xs font-semibold mr-4">Azure AI Search</li>
+                        <li class="text-blue-800 text-xs font-semibold mr-4">CI/CD Pipelines</li>
+                    </ul>
+                </div>
+                <div class="mb-2 skill-section">
+                    <h3 class="font-bold text-xs text-gray-800 mr-2 skill-header">AI & Data Science: </h3>
+                    <ul class="list-none skill-subsection">
+                        <li class="text-blue-800 text-xs font-semibold mr-4">LLM</li>
+                        <li class="text-blue-800 text-xs font-semibold mr-4">LangChain</li>
+                        <li class="text-blue-800 text-xs font-semibold mr-4">HFT</li>
+                        <li class="text-blue-800 text-xs font-semibold mr-4">Prompt Engineering</li>
+                        <li class="text-blue-800 text-xs font-semibold mr-4">Feature Engineering</li>
+                    </ul>
+                </div>
+                <div class="mb-2 skill-section">
+                    <h3 class="font-bold text-xs text-gray-800 mr-2 skill-header">Other Tools & Concepts: </h3>
+                    <ul class="list-none skill-subsection">
+                        <li class="text-blue-800 text-xs font-semibold mr-4">SQL</li>
+                        <li class="text-blue-800 text-xs font-semibold mr-4">HTML/CSS</li>
+                        <li class="text-blue-800 text-xs font-semibold mr-4">GIT</li>
+                        <li class="text-blue-800 text-xs font-semibold mr-4">REST APIs</li>
+                        <li class="text-blue-800 text-xs font-semibold mr-4">Distributed Systems Design</li>
+                        <li class="text-blue-800 text-xs font-semibold mr-4">Microservices Architecture</li>
+                    </ul>
+                </div>
             </div>
-            <p class="text-sm text-gray-600">
-              Dec 2021 – Nov 2022 | Hyderabad, India
-            </p>
-          </div>
-          <ul class="text-sm space-y-2">
-            <li class="flex items-start">
-              <span class="text-blue-600 mr-2">•</span>
-              <span
-                >Designed and developed the core
-                <span class="font-bold">Azure Event Management platform</span>
-                to support mission-critical app resiliency and intelligent
-                escalation workflows.</span
-              >
-            </li>
-            <li class="flex items-start">
-              <span class="text-blue-600 mr-2">•</span>
-              <span
-                >Introduced AI-enhanced case routing using text classification
-                and similarity models, improving case assignment accuracy.</span
-              >
-            </li>
-            <li class="flex items-start">
-              <span class="text-blue-600 mr-2">•</span>
-              <span
-                >Worked on event-driven architecture and integrated early
-                anomaly detection using
-                <span class="font-bold">Python and Azure ML</span> to
-                preemptively flag outages.</span
-              >
-            </li>
-          </ul>
-        </div>
+        </section>
 
-        <!-- Soroco - Senior Software Engineer -->
-        <div class="mb-6">
-          <div class="flex items-center justify-between mb-2">
-            <div class="flex items-center">
-              <img
-                src="images/logos/soroco_logo.jpg"
-                alt="Soroco Logo"
-                class="h-12 w-12 mr-2"
-              />
-              <div>
-                <h3 class="text-base font-bold text-gray-800">Soroco</h3>
-                <p class="text-sm font-semibold text-gray-600">
-                  Senior Software Engineer
-                </p>
-              </div>
+        <!-- Experience -->
+        <section class="mb-6">
+            <h2 class="text-md font-bold text-blue-600 pb-1">
+                <i class="fas fa-arrow-trend-up mr-2 text-blue-600"></i>Experience
+            </h2>
+            <hr class="border-b border-grey-600 mb-4" />
+        
+            <!-- Microsoft - Software Engineer 2 -->
+            <div class="mb-6">
+                <div class="flex items-center justify-between mb-2">
+                    <div class="flex items-center">
+                        <img src="images/logos/microsoft_logo.jpg" alt="Microsoft Logo" class="h-10 w-10 mr-2" />
+                        <div>
+                            <h3 class="text-base font-bold text-gray-800">Microsoft</h3>
+                            <p class="text-xs font-semibold text-gray-600">Software Engineer 2</p>
+                        </div>
+                    </div>
+                    <p class="text-xs text-gray-600">Dec 2022 – Present | Hyderabad, India</p>
+                </div>
+                <ul class="text-xs space-y-2">
+                    <li class="flex items-start"><span class="text-blue-600 mr-2">•</span><span>Leading <span class="font-bold">Azure Event Management</span> platform with AI-based log anomaly detection and auto-healing.</span></li>
+                    <li class="flex items-start"><span class="text-blue-600 mr-2">•</span><span>Built <span class="font-bold">Smart Subscription</span> using AI Search and OpenAI, cutting triage time by <span class="font-bold text-blue-600">60%</span>.</span></li>
+                    <li class="flex items-start"><span class="text-blue-600 mr-2">•</span><span>Developed AI assistant with OpenAI and Teams transcripts, improving team efficiency by <span class="font-bold text-blue-600">40%</span>.</span></li>
+                    <li class="flex items-start"><span class="text-blue-600 mr-2">•</span><span>Engineered privacy-resilient systems using <span class="font-bold">C#, .NET, Cosmos DB</span>, and ML-based throttling strategies.</span></li>
+                    <li class="flex items-start"><span class="text-blue-600 mr-2">•</span><span>Created secure dynamic execution engine with runtime Azure ML model integration.</span></li>
+                    <li class="flex items-start"><span class="text-blue-600 mr-2">•</span><span>Specialized in threat modeling, optimization, and scalable <span class="font-bold">AI pipelines</span>.</span></li>
+                </ul>
             </div>
-            <p class="text-sm text-gray-600">
-              Feb 2021 – Nov 2021 | Bangalore, India
-            </p>
-          </div>
-          <ul class="text-sm space-y-2">
-            <li class="flex items-start">
-              <span class="text-blue-600 mr-2">•</span>
-              <span
-                >Led development for
-                <span class="font-bold">Scout Enterprise</span>, driving
-                improvements in task mining, user behavior modeling, and
-                interactive UI visualizations.</span
-              >
-            </li>
-            <li class="flex items-start">
-              <span class="text-blue-600 mr-2">•</span>
-              <span
-                >Architected critical components for Scout’s real-time data
-                ingestion and rendering pipeline, improving latency and
-                throughput by
-                <span class="font-bold text-blue-600">35%</span>.</span
-              >
-            </li>
-            <li class="flex items-start">
-              <span class="text-blue-600 mr-2">•</span>
-              <span
-                >Mentored junior engineers, reviewed architecture proposals, and
-                contributed to technical design discussions across teams.</span
-              >
-            </li>
-          </ul>
-        </div>
-
-        <!-- Soroco - Software Engineer -->
-        <div class="mb-6">
-          <div class="flex items-center justify-between mb-2">
-            <div class="flex items-center">
-              <img
-                src="images/logos/soroco_logo.jpg"
-                alt="Soroco Logo"
-                class="h-12 w-12 mr-2"
-              />
-              <div>
-                <h3 class="text-base font-bold text-gray-800">Soroco</h3>
-                <p class="text-sm font-semibold text-gray-600">
-                  Software Engineer
-                </p>
-              </div>
+        
+            <!-- Microsoft - Software Engineer -->
+            <div class="mb-6">
+                <div class="flex items-center justify-between mb-2">
+                    <div class="flex items-center">
+                        <img src="images/logos/microsoft_logo.jpg" alt="Microsoft Logo" class="h-10 w-10 mr-2" />
+                        <div>
+                            <h3 class="text-base font-bold text-gray-800">Microsoft</h3>
+                            <p class="text-xs font-semibold text-gray-600">Software Engineer</p>
+                        </div>
+                    </div>
+                    <p class="text-xs text-gray-600">Dec 2021 – Nov 2022 | Hyderabad, India</p>
+                </div>
+                <ul class="text-xs space-y-2">
+                    <li class="flex items-start"><span class="text-blue-600 mr-2">•</span><span>Delivered <span class="font-bold">Azure Event Management</span> to support escalation workflows and application resiliency.</span></li>
+                    <li class="flex items-start"><span class="text-blue-600 mr-2">•</span><span>Implemented ML models to auto-assign and route customer cases, improving accuracy and response time.</span></li>
+                    <li class="flex items-start"><span class="text-blue-600 mr-2">•</span><span>Integrated anomaly detection using <span class="font-bold">Python + Azure ML</span> for faster outage alerts.</span></li>
+                </ul>
             </div>
-            <p class="text-sm text-gray-600">
-              Aug 2019 – Jan 2021 | Bangalore, India
-            </p>
-          </div>
-          <ul class="text-sm space-y-2">
-            <li class="flex items-start">
-              <span class="text-blue-600 mr-2">•</span>
-              <span
-                >Built and maintained core APIs and workflow logic for
-                <span class="font-bold">Process Designer</span>, enabling
-                scalable process automation across enterprises.</span
-              >
-            </li>
-            <li class="flex items-start">
-              <span class="text-blue-600 mr-2">•</span>
-              <span
-                >Integrated data visualizations and flow-based tools to allow
-                business users to configure and simulate workflows with
-                ease.</span
-              >
-            </li>
-            <li class="flex items-start">
-              <span class="text-blue-600 mr-2">•</span>
-              <span
-                >Worked closely with product and QA teams to launch stable
-                feature rollouts and conduct regression testing.</span
-              >
-            </li>
-          </ul>
-        </div>
-
-        <!-- Kreeti Technologies Pvt. Ltd. - Web Engineer -->
-        <div class="mb-6">
-          <div class="flex items-center justify-between mb-2">
-            <div class="flex items-center">
-              <img
-                src="images/logos/kreeti_logo.jpg"
-                alt="Kreeti Technologies Logo"
-                class="h-10 w-10 mr-2"
-              />
-              <div>
-                <h3 class="text-base font-bold text-gray-800">
-                  Kreeti Technologies Pvt. Ltd.
-                </h3>
-                <p class="text-sm font-semibold text-gray-600">Web Engineer</p>
-              </div>
+        
+            <!-- Soroco - Senior Software Engineer -->
+            <div class="mb-6">
+                <div class="flex items-center justify-between mb-2">
+                    <div class="flex items-center">
+                        <img src="images/logos/soroco_logo.jpg" alt="Soroco Logo" class="h-10 w-10 mr-2" />
+                        <div>
+                            <h3 class="text-base font-bold text-gray-800">Soroco</h3>
+                            <p class="text-xs font-semibold text-gray-600">Senior Software Engineer</p>
+                        </div>
+                    </div>
+                    <p class="text-xs text-gray-600">Feb 2021 – Nov 2021 | Bangalore, India</p>
+                </div>
+                <ul class="text-xs space-y-2">
+                    <li class="flex items-start"><span class="text-blue-600 mr-2">•</span><span>Led dev for <span class="font-bold">Scout Enterprise</span>, enabling accurate task mining and behavior insights.</span></li>
+                    <li class="flex items-start"><span class="text-blue-600 mr-2">•</span><span>Boosted data pipeline throughput by <span class="font-bold text-blue-600">35%</span> through performance tuning.</span></li>
+                    <li class="flex items-start"><span class="text-blue-600 mr-2">•</span><span>Conducted design reviews, mentored engineers, and ensured best practices.</span></li>
+                </ul>
             </div>
-            <p class="text-sm text-gray-600">
-              Nov 2017 – Aug 2019 | Kolkata, India
-            </p>
-          </div>
-          <ul class="text-sm space-y-2">
-            <li class="flex items-start">
-              <span class="text-blue-600 mr-2">•</span>
-              <span
-                >Migrated legacy systems and optimized complex database queries
-                for <span class="font-bold">Clockwork Recruiting</span>,
-                improving performance and data integrity.</span
-              >
-            </li>
-            <li class="flex items-start">
-              <span class="text-blue-600 mr-2">•</span>
-              <span
-                >Developed <span class="font-bold">Smart Gardener</span> from
-                scratch—a dynamic crop recommendation tool with Stripe payment
-                integration and responsive frontend.</span
-              >
-            </li>
-            <li class="flex items-start">
-              <span class="text-blue-600 mr-2">•</span>
-              <span
-                >Scaled Faburica’s cloud infrastructure using load balancers,
-                autoscaling, and the
-                <span class="font-bold">ELK stack</span> for log analytics and
-                monitoring.</span
-              >
-            </li>
-          </ul>
-        </div>
-
-        <!-- Indian Institute of Technology, Guwahati - Research Intern -->
-        <div class="mb-6">
-          <div class="flex items-center justify-between mb-2">
-            <div class="flex items-center">
-              <img
-                src="images/logos/iitg_logo.jpg"
-                alt="IIT Guwahati Logo"
-                class="h-12 w-12 mr-2"
-              />
-              <div>
-                <h3 class="text-base font-bold text-gray-800">
-                  Indian Institute of Technology, Guwahati
-                </h3>
-                <p class="text-sm font-semibold text-gray-600">
-                  Research Intern
-                </p>
-              </div>
+        
+            <!-- Soroco - Software Engineer -->
+            <div class="mb-6">
+                <div class="flex items-center justify-between mb-2">
+                    <div class="flex items-center">
+                        <img src="images/logos/soroco_logo.jpg" alt="Soroco Logo" class="h-10 w-10 mr-2" />
+                        <div>
+                            <h3 class="text-base font-bold text-gray-800">Soroco</h3>
+                            <p class="text-xs font-semibold text-gray-600">Software Engineer</p>
+                        </div>
+                    </div>
+                    <p class="text-xs text-gray-600">Aug 2019 – Jan 2021 | Bangalore, India</p>
+                </div>
+                <ul class="text-xs space-y-2">
+                    <li class="flex items-start"><span class="text-blue-600 mr-2">•</span><span>Developed core APIs for <span class="font-bold">Process Designer</span> to support enterprise automation workflows.</span></li>
+                    <li class="flex items-start"><span class="text-blue-600 mr-2">•</span><span>Created visualization tools to simulate and validate process automation.</span></li>
+                    <li class="flex items-start"><span class="text-blue-600 mr-2">•</span><span>Collaborated across teams to deliver robust, stable product releases.</span></li>
+                </ul>
             </div>
-            <p class="text-sm text-gray-600">
-              Jan 2016 – Feb 2016 | Guwahati Area, India
-            </p>
-          </div>
-          <ul class="text-sm space-y-2">
-            <li class="flex items-start">
-              <span class="text-blue-600 mr-2">•</span>
-              <span
-                >Pioneered research at the
-                <span class="font-bold"
-                  >User Centric Computing & Networking Lab</span
-                >, leading to a methodology that reshaped user experience
-                design.</span
-              >
-            </li>
-            <li class="flex items-start">
-              <span class="text-blue-600 mr-2">•</span>
-              <span
-                >Developed
-                <span class="font-bold"
-                  >A Linear Algebraic Approach to Determine a Common Ordered
-                  Scan Path</span
-                >, an algorithm that increased eye-tracking accuracy by
-                <span class="font-bold text-blue-600">80%</span>, now adopted in
-                IITG for VR technologies development.</span
-              >
-            </li>
-            <li class="flex items-start">
-              <span class="text-blue-600 mr-2">•</span>
-              <span
-                >Architected an innovative annotation feature for an ICT-based
-                <span class="font-bold">E-Learning System</span>, boosting
-                student engagement.</span
-              >
-            </li>
-            <li class="flex items-start">
-              <span class="text-blue-600 mr-2">•</span>
-              <span
-                >Conducted high-stakes server load testing for an ICT-based
-                <span class="font-bold">E-Learning System</span>, ensuring
-                flawless performance under extreme conditions and enabling the
-                platform to support over 1 million concurrent users during
-                online education surges.</span
-              >
-            </li>
-          </ul>
-        </div>
-
-        <!-- Kalyani Government Engineering College - Coordinator Cryptix 2017 -->
-        <div class="mb-6">
-          <div class="flex items-center justify-between mb-2">
-            <div class="flex items-center">
-              <img
-                src="images/logos/kgec_logo.jpg"
-                alt="Kalyani Government Engineering College Logo"
-                class="h-12 w-12 mr-2"
-              />
-              <div>
-                <h3 class="text-base font-bold text-gray-800">
-                  Kalyani Government Engineering College
-                </h3>
-                <p class="text-sm font-semibold text-gray-600">
-                  Coordinator Cryptix 2017, Espektro (Part-time)
-                </p>
-              </div>
+        
+            <!-- Kreeti Technologies Pvt. Ltd. - Web Engineer -->
+            <div class="mb-6">
+                <div class="flex items-center justify-between mb-2">
+                    <div class="flex items-center">
+                        <img src="images/logos/kreeti_logo.jpg" alt="Kreeti Technologies Logo" class="h-8 w-8 mr-2" />
+                        <div>
+                            <h3 class="text-base font-bold text-gray-800">Kreeti Technologies Pvt. Ltd.</h3>
+                            <p class="text-xs font-semibold text-gray-600">Web Engineer</p>
+                        </div>
+                    </div>
+                    <p class="text-xs text-gray-600">Nov 2017 – Aug 2019 | Kolkata, India</p>
+                </div>
+                <ul class="text-xs space-y-2">
+                    <li class="flex items-start"><span class="text-blue-600 mr-2">•</span><span>Improved <span class="font-bold">Clockwork Recruiting</span> by optimizing legacy queries and enhancing performance.</span></li>
+                    <li class="flex items-start"><span class="text-blue-600 mr-2">•</span><span>Developed <span class="font-bold">Smart Gardener</span>, a crop advisory tool with Stripe integration.</span></li>
+                    <li class="flex items-start"><span class="text-blue-600 mr-2">•</span><span>Scaled Faburica using ELK stack, autoscaling, and load balancing for better availability.</span></li>
+                </ul>
             </div>
-            <p class="text-sm text-gray-600">Mar 2017 | West Bengal, India</p>
-          </div>
-          <ul class="text-sm space-y-2">
-            <li class="flex items-start">
-              <span class="text-blue-600 mr-2">•</span>
-              <span
-                >Masterminded the
-                <span class="font-bold">CRYPTIX 2017</span> event during
-                <span class="font-bold">ESPEKTRO 2017</span> (technical fest of
-                KGEC), transforming it into the WBUTs largest online
-                cryptography challenge, attracting over
-                <span class="font-bold text-blue-600">1000+</span> participants
-                from
-                <span class="font-bold text-blue-600">50+</span> colleges.</span
-              >
-            </li>
-          </ul>
-        </div>
-
-        <!-- Kalyani Government Engineering College - Web Developer, Espektro 2017 -->
-        <div class="mb-6">
-          <div class="flex items-center justify-between mb-2">
-            <div class="flex items-center">
-              <img
-                src="images/logos/kgec_logo.jpg"
-                alt="Kalyani Government Engineering College Logo"
-                class="h-12 w-12 mr-2"
-              />
-              <div>
-                <h3 class="text-base font-bold text-gray-800">
-                  Kalyani Government Engineering College
-                </h3>
-                <p class="text-sm font-semibold text-gray-600">
-                  Web Developer, Espektro 2017 (Part-time)
-                </p>
-              </div>
+        
+            <!-- Indian Institute of Technology, Guwahati - Research Intern -->
+            <div class="mb-6">
+                <div class="flex items-center justify-between mb-2">
+                    <div class="flex items-center">
+                        <img src="images/logos/iitg_logo.jpg" alt="IIT Guwahati Logo" class="h-10 w-10 mr-2" />
+                        <div>
+                            <h3 class="text-base font-bold text-gray-800">Indian Institute of Technology, Guwahati</h3>
+                            <p class="text-xs font-semibold text-gray-600">Research Intern</p>
+                        </div>
+                    </div>
+                    <p class="text-xs text-gray-600">Jan 2016 – Feb 2016 | Guwahati Area, India</p>
+                </div>
+                <ul class="text-xs space-y-2">
+                    <li class="flex items-start"><span class="text-blue-600 mr-2">•</span><span>Worked at <span class="font-bold">User Centric Computing Lab</span> focusing on user interaction and eye-tracking design.</span></li>
+                    <li class="flex items-start"><span class="text-blue-600 mr-2">•</span><span>Developed scan path algorithm, improving gaze tracking accuracy by <span class="font-bold text-blue-600">80%</span>.</span></li>
+                    <li class="flex items-start"><span class="text-blue-600 mr-2">•</span><span>Built annotation tool for an ICT-enabled <span class="font-bold">E-Learning System</span>.</span></li>
+                </ul>
             </div>
-            <p class="text-sm text-gray-600">
-              Jan 2017 – Feb 2017 | West Bengal, India
-            </p>
-          </div>
-          <ul class="text-sm space-y-2">
-            <li class="flex items-start">
-              <span class="text-blue-600 mr-2">•</span>
-              <span
-                >Revolutionized the digital presence of
-                <span class="font-bold">ESPEKTRO 2017</span> (technical fest of
-                KGEC) by designing a 3D animated and interactive website using
-                <span class="font-bold">three.js</span> and advanced web
-                technologies, driving a
-                <span class="font-bold text-blue-600">200% increase</span> in
-                event registrations.</span
-              >
-            </li>
-          </ul>
-        </div>
-      </section>
+        </section>
+        
+        <!-- Education -->
+        <section class="mb-6">
+            <h2 class="text-md font-bold text-blue-600 pb-1">
+                <i class="fas fa-user-graduate mr-2 text-blue-600"></i>Education
+            </h2>
+            <hr class="border-b border-grey-600 mb-4" />
 
-      <!-- Education -->
-      <section class="mb-6">
-        <h2 class="text-lg font-bold text-blue-600 pb-1">
-          <i class="fas fa-user-graduate mr-2 text-blue-600"></i>Education
-        </h2>
-        <hr class="border-b border-grey-600 mb-4" />
-
-        <!-- Kalyani Government Engineering College -->
-        <div class="mb-6">
-          <div class="flex items-center justify-between mb-2">
-            <div class="flex items-center">
-              <img
-                src="images/logos/kgec_logo.jpg"
-                alt="Kalyani Government Engineering College Logo"
-                class="h-12 w-12 mr-2"
-              />
-              <div>
-                <h3 class="text-base font-bold text-gray-800">
-                  Kalyani Government Engineering College
-                </h3>
-                <p class="text-sm font-semibold text-gray-600">
-                  B.Tech, Computer Science & Engineering
-                </p>
-                <p class="text-sm text-gray-600">CGPA: 8.3/10</p>
-              </div>
+            <!-- Kalyani Government Engineering College -->
+            <div class="mb-6">
+                <div class="flex items-center justify-between mb-2">
+                    <div class="flex items-center">
+                        <img src="images/logos/kgec_logo.jpg" alt="Kalyani Government Engineering College Logo"
+                            class="h-10 w-10 mr-2" />
+                        <div>
+                            <h3 class="text-base font-bold text-gray-800">
+                                Kalyani Government Engineering College
+                            </h3>
+                            <p class="text-xs font-semibold text-gray-600">
+                                B.Tech, Computer Science & Engineering
+                            </p>
+                            <p class="text-xs text-gray-600">CGPA: 8.3/10</p>
+                        </div>
+                    </div>
+                    <p class="text-xs text-gray-600">2013 – 2017</p>
+                </div>
+                <ul class="text-xs space-y-2">
+                    <li class="flex items-start">
+                        <span class="text-blue-600 mr-2">•</span>
+                        <span>Conducted multiple tech events, including organizing workshops
+                            and competitions during
+                            <span class="font-bold">ESPEKTRO 2017</span>.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-blue-600 mr-2">•</span>
+                        <span>Founded the <span class="font-bold">Robotics Club</span>,
+                            fostering innovation and hands-on learning in robotics and
+                            automation among students.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-blue-600 mr-2">•</span>
+                        <span>Finalist in the
+                            <span class="font-bold">Smart India Hackathon 2017</span>,
+                            working on a project analyzing climate changes based on
+                            migratory bird data, contributing to environmental
+                            research.</span>
+                    </li>
+                </ul>
             </div>
-            <p class="text-sm text-gray-600">2013 – 2017</p>
-          </div>
-          <ul class="text-sm space-y-2">
-            <li class="flex items-start">
-              <span class="text-blue-600 mr-2">•</span>
-              <span
-                >Conducted multiple tech events, including organizing workshops
-                and competitions during
-                <span class="font-bold">ESPEKTRO 2017</span>.</span
-              >
-            </li>
-            <li class="flex items-start">
-              <span class="text-blue-600 mr-2">•</span>
-              <span
-                >Founded the <span class="font-bold">Robotics Club</span>,
-                fostering innovation and hands-on learning in robotics and
-                automation among students.</span
-              >
-            </li>
-            <li class="flex items-start">
-              <span class="text-blue-600 mr-2">•</span>
-              <span
-                >Finalist in the
-                <span class="font-bold">Smart India Hackathon 2017</span>,
-                working on a project analyzing climate changes based on
-                migratory bird data, contributing to environmental
-                research.</span
-              >
-            </li>
-          </ul>
-        </div>
 
-        <!-- Hariyana Vidya Mandir -->
-        <div class="mb-6">
-          <div class="flex items-center justify-between mb-2">
-            <div class="flex items-center">
-              <img
-                src="images/logos/hvm_logo.jpg"
-                alt="Hariyana Vidya Mandir Logo"
-                class="h-12 w-12 mr-2"
-              />
-              <div>
-                <h3 class="text-base font-bold text-gray-800">
-                  Hariyana Vidya Mandir
-                </h3>
-                <p class="text-sm font-semibold text-gray-600">
-                  Science, AISSCE
-                </p>
-                <p class="text-sm text-gray-600">Percentage: 92.5%</p>
-              </div>
+            <!-- Hariyana Vidya Mandir -->
+            <div class="mb-6">
+                <div class="flex items-center justify-between mb-2">
+                    <div class="flex items-center">
+                        <img src="images/logos/hvm_logo.jpg" alt="Hariyana Vidya Mandir Logo" class="h-10 w-10 mr-2" />
+                        <div>
+                            <h3 class="text-base font-bold text-gray-800">
+                                Hariyana Vidya Mandir
+                            </h3>
+                            <p class="text-xs font-semibold text-gray-600">
+                                Science, AISSCE
+                            </p>
+                            <p class="text-xs text-gray-600">Percentage: 92.5%</p>
+                        </div>
+                    </div>
+                    <p class="text-xs text-gray-600">2012 – 2013</p>
+                </div>
+                <ul class="text-xs space-y-2">
+                    <li class="flex items-start">
+                        <span class="text-blue-600 mr-2">•</span>
+                        <span>Excelled in the AISSCE Science stream, securing
+                            <span class="font-bold">92.5%</span>.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-blue-600 mr-2">•</span>
+                        <span>Awarded the
+                            <span class="font-bold">Merit Scholarship</span> for academic
+                            performance and leadership in science exhibitions.</span>
+                    </li>
+                </ul>
             </div>
-            <p class="text-sm text-gray-600">2012 – 2013</p>
-          </div>
-          <ul class="text-sm space-y-2">
-            <li class="flex items-start">
-              <span class="text-blue-600 mr-2">•</span>
-              <span
-                >Excelled in the AISSCE Science stream, securing
-                <span class="font-bold">92.5%</span>.</span
-              >
-            </li>
-            <li class="flex items-start">
-              <span class="text-blue-600 mr-2">•</span>
-              <span
-                >Awarded the
-                <span class="font-bold">Merit Scholarship</span> for academic
-                performance and leadership in science exhibitions.</span
-              >
-            </li>
-          </ul>
-        </div>
-      </section>
+        </section>
 
-      <!-- Projects -->
-      <section class="mb-6">
-        <h2 class="text-lg font-bold text-blue-600 pb-1">
-          <i class="fas fa-diagram-project mr-2 text-blue-600"></i>Projects
-        </h2>
-        <hr class="border-b border-grey-600 mb-4" />
+        <!-- Projects -->
+        <section class="mb-6">
+            <h2 class="text-md font-bold text-blue-600 pb-1">
+                <i class="fas fa-diagram-project mr-2 text-blue-600"></i>Projects
+            </h2>
+            <hr class="border-b border-grey-600 mb-4" />
 
-        <!-- Leetcode Extractor -->
-        <div
-          class="mb-4 border border-gray-200 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow"
-        >
-          <div class="flex items-center justify-between mb-2">
-            <h3 class="text-base font-bold text-gray-800">
-              Leetcode Extractor
-            </h3>
-            <p class="text-sm text-gray-600 flex items-center">
-              <i class="fas fa-calendar-alt w-4 h-4 mr-1"></i>
-              Apr 2025
-            </p>
-          </div>
-          <ul class="text-sm space-y-2">
-            <li class="flex items-start">
-              <span class="text-blue-600 mr-2">•</span>
-              <span
-                >Developed a tool to extract data from Leetcode, enabling users
-                without premium access to search, filter, and sort problems by
-                companies and other parameters, and access editorials.</span
-              >
-            </li>
-            <li class="flex items-center">
-              <i class="fas fa-link w-4 h-4 mr-2 text-blue-600"></i>
-              <span
-                ><span class="font-bold">Link:</span>
-                <a
-                  href="https://simpleandsmart.org"
-                  class="text-blue-600 hover:underline"
-                  >simpleandsmart.org</a
-                ></span
-              >
-            </li>
-          </ul>
-        </div>
-
-        <!-- A Linear Algebraic Approach to Determine a Common Ordered Scan Path -->
-        <div
-          class="mb-4 border border-gray-200 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow"
-        >
-          <div class="flex items-center justify-between mb-2">
-            <h3 class="text-base font-bold text-gray-800">
-              Linear Algebraic Approach for Eye Gaze Scan Path
-            </h3>
-            <p class="text-sm text-gray-600 flex items-center">
-              <i class="fas fa-calendar-alt w-4 h-4 mr-1"></i>
-              Jan 2016 – Feb 2016
-            </p>
-          </div>
-          <ul class="text-sm space-y-2">
-            <li class="flex items-start">
-              <span class="text-blue-600 mr-2">•</span>
-              <span
-                >Researched and developed a method to determine a common ordered
-                scan path from eye gaze data of multiple users.</span
-              >
-            </li>
-            <li class="flex items-center">
-              <i class="fas fa-code w-4 h-4 mr-2 text-blue-600"></i>
-              <span
-                ><span class="font-bold">Technologies Used:</span>
-                <span
-                  class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded"
-                  >Linear Programming</span
-                ></span
-              >
-            </li>
-            <li class="flex items-start">
-              <span class="text-blue-600 mr-2">•</span>
-              <span
-                ><span class="font-bold">Associated with:</span> Indian
-                Institute of Technology, Guwahati</span
-              >
-            </li>
-          </ul>
-        </div>
-
-        <!-- An Automated Scoring Application -->
-        <div
-          class="mb-4 border border-gray-200 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow"
-        >
-          <div class="flex items-center justify-between mb-2">
-            <h3 class="text-base font-bold text-gray-800">
-              Automated Scoring Application for Student Essays
-            </h3>
-            <p class="text-sm text-gray-600 flex items-center">
-              <i class="fas fa-calendar-alt w-4 h-4 mr-1"></i>
-              Dec 2016 – May 2017
-            </p>
-          </div>
-          <ul class="text-sm space-y-2">
-            <li class="flex items-start">
-              <span class="text-blue-600 mr-2">•</span>
-              <span
-                >Designed an application to automatically score student essays
-                and short answers using NLP techniques.</span
-              >
-            </li>
-            <li class="flex items-center">
-              <i class="fas fa-code w-4 h-4 mr-2 text-blue-600"></i>
-              <span
-                ><span class="font-bold">Technologies Used:</span>
-                <span
-                  class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded mr-1"
-                  >Python</span
-                ><span
-                  class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded"
-                  >NLTK</span
-                ></span
-              >
-            </li>
-          </ul>
-        </div>
-
-        <!-- Video Categorization for Scene Change Detection -->
-        <div
-          class="mb-4 border border-gray-200 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow"
-        >
-          <div class="flex items-center justify-between mb-2">
-            <h3 class="text-base font-bold text-gray-800">
-              Video Categorization for Scene Change Detection
-            </h3>
-            <p class="text-sm text-gray-600 flex items-center">
-              <i class="fas fa-calendar-alt w-4 h-4 mr-1"></i>
-              Dec 2015 – Apr 2017
-            </p>
-          </div>
-          <ul class="text-sm space-y-2">
-            <li class="flex items-start">
-              <span class="text-blue-600 mr-2">•</span>
-              <span
-                >Built a system to categorize videos by detecting scene changes
-                and identifying characters in movies.</span
-              >
-            </li>
-            <li class="flex items-center">
-              <i class="fas fa-code w-4 h-4 mr-2 text-blue-600"></i>
-              <span
-                ><span class="font-bold">Technologies Used:</span>
-                <span
-                  class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded mr-1"
-                  >MATLAB</span
-                ><span
-                  class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded mr-1"
-                  >XILINX</span
-                ><span
-                  class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded"
-                  >ModelSim</span
-                ></span
-              >
-            </li>
-            <li class="flex items-start">
-              <span class="text-blue-600 mr-2">•</span>
-              <span
-                ><span class="font-bold">Associated with:</span> Kalyani
-                Government Engineering College</span
-              >
-            </li>
-          </ul>
-        </div>
-
-        <!-- Object Identification through Edge Detection -->
-        <div
-          class="mb-4 border border-gray-200 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow"
-        >
-          <div class="flex items-center justify-between mb-2">
-            <h3 class="text-base font-bold text-gray-800">
-              Object Identification Using Canny Edge Detection
-            </h3>
-            <p class="text-sm text-gray-600 flex items-center">
-              <i class="fas fa-calendar-alt w-4 h-4 mr-1"></i>
-              Dec 2016 – Apr 2017
-            </p>
-          </div>
-          <ul class="text-sm space-y-2">
-            <li class="flex items-start">
-              <span class="text-blue-600 mr-2">•</span>
-              <span
-                >Developed a system to identify objects in images using the
-                Canny Edge Detection algorithm.</span
-              >
-            </li>
-            <li class="flex items-center">
-              <i class="fas fa-code w-4 h-4 mr-2 text-blue-600"></i>
-              <span
-                ><span class="font-bold">Technologies Used:</span>
-                <span
-                  class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded"
-                  >MATLAB</span
-                ></span
-              >
-            </li>
-            <li class="flex items-start">
-              <span class="text-blue-600 mr-2">•</span>
-              <span
-                ><span class="font-bold">Associated with:</span> Kalyani
-                Government Engineering College</span
-              >
-            </li>
-          </ul>
-        </div>
-
-        <!-- A Bar Charts Application -->
-        <div
-          class="mb-4 border border-gray-200 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow"
-        >
-          <div class="flex items-center justify-between mb-2">
-            <h3 class="text-base font-bold text-gray-800">
-              A Bar Charts Application
-            </h3>
-            <p class="text-sm text-gray-600 flex items-center">
-              <i class="fas fa-calendar-alt w-4 h-4 mr-1"></i>
-              Oct 2017
-            </p>
-          </div>
-          <ul class="text-sm space-y-2">
-            <li class="flex items-start">
-              <span class="text-blue-600 mr-2">•</span>
-              <span
-                >Developed a web application to create and visualize bar charts
-                with interactive features.</span
-              >
-            </li>
-            <li class="flex items-center">
-              <i class="fas fa-code w-4 h-4 mr-2 text-blue-600"></i>
-              <span
-                ><span class="font-bold">Technologies Used:</span>
-                <span
-                  class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded mr-1"
-                  >ReactJS</span
-                ><span
-                  class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded mr-1"
-                  >HTML5</span
-                ><span
-                  class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded"
-                  >Bootstrap3</span
-                ></span
-              >
-            </li>
-            <li class="flex items-center">
-              <i class="fas fa-link w-4 h-4 mr-2 text-blue-600"></i>
-              <span
-                ><span class="font-bold">GitHub:</span>
-                <a
-                  href="https://github.com/souviknandi24/bar-charts"
-                  class="text-blue-600 hover:underline"
-                  >github.com/souviknandi24/bar-charts</a
-                ></span
-              >
-            </li>
-          </ul>
-        </div>
-
-        <!-- An Event Task Management Webapp -->
-        <div
-          class="mb-4 border border-gray-200 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow"
-        >
-          <div class="flex items-center justify-between mb-2">
-            <h3 class="text-base font-bold text-gray-800">
-              An Event Task Management Webapp
-            </h3>
-            <p class="text-sm text-gray-600 flex items-center">
-              <i class="fas fa-calendar-alt w-4 h-4 mr-1"></i>
-              Sep 2017
-            </p>
-          </div>
-          <ul class="text-sm space-y-2">
-            <li class="flex items-start">
-              <span class="text-blue-600 mr-2">•</span>
-              <span
-                >Built a web application to manage tasks and schedules for
-                events, improving team coordination.</span
-              >
-            </li>
-            <li class="flex items-center">
-              <i class="fas fa-code w-4 h-4 mr-2 text-blue-600"></i>
-              <span
-                ><span class="font-bold">Technologies Used:</span>
-                <span
-                  class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded mr-1"
-                  >Ruby on Rails</span
-                ><span
-                  class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded mr-1"
-                  >MySQL</span
-                ><span
-                  class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded mr-1"
-                  >HTML5</span
-                ><span
-                  class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded"
-                  >Bootstrap3</span
-                ></span
-              >
-            </li>
-            <li class="flex items-center">
-              <i class="fas fa-link w-4 h-4 mr-2 text-blue-600"></i>
-              <span
-                ><span class="font-bold">GitHub:</span>
-                <a
-                  href="https://github.com/souviknandi24/eventask"
-                  class="text-blue-600 hover:underline"
-                  >github.com/souviknandi24/eventask</a
-                ></span
-              >
-            </li>
-          </ul>
-        </div>
-
-        <!-- Online Job Portal -->
-        <div
-          class="mb-4 border border-gray-200 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow"
-        >
-          <div class="flex items-center justify-between mb-2">
-            <h3 class="text-base font-bold text-gray-800">Online Job Portal</h3>
-            <p class="text-sm text-gray-600 flex items-center">
-              <i class="fas fa-calendar-alt w-4 h-4 mr-1"></i>
-              Apr 2017
-            </p>
-          </div>
-          <ul class="text-sm space-y-2">
-            <li class="flex items-start">
-              <span class="text-blue-600 mr-2">•</span>
-              <span
-                >Created a platform for job seekers to search and filter
-                relevant job postings efficiently.</span
-              >
-            </li>
-            <li class="flex items-center">
-              <i class="fas fa-code w-4 h-4 mr-2 text-blue-600"></i>
-              <span
-                ><span class="font-bold">Technologies Used:</span>
-                <span
-                  class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded mr-1"
-                  >PHP</span
-                ><span
-                  class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded mr-1"
-                  >MySQL</span
-                ><span
-                  class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded mr-1"
-                  >HTML5</span
-                ><span
-                  class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded mr-1"
-                  >CSS3</span
-                ><span
-                  class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded mr-1"
-                  >Bootstrap3</span
-                ><span
-                  class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded"
-                  >JavaScript</span
-                ></span
-              >
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <!-- Certifications -->
-      <section class="mb-6">
-        <div class="flex items-center mb-4">
-          <h2 class="text-lg font-bold text-blue-600 flex items-center">
-            <i class="fas fa-certificate mr-2 text-blue-600"></i>Certifications
-          </h2>
-        </div>
-        <hr class="border-b border-grey-600 mb-6" />
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <!-- Microsoft Azure AI Fundamentals -->
-          <div
-            class="bg-white border border-gray-200 rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow transform hover:-translate-y-1"
-          >
-            <div class="flex items-center justify-between mb-2">
-              <h3 class="text-base font-bold text-gray-800">
-                Microsoft Azure AI Fundamentals
-              </h3>
-              <span
-                class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded"
-              >
-                <i class="fas fa-calendar-alt mr-1"></i>Apr 2025
-              </span>
+            <!-- Leetcode Extractor -->
+            <div class="mb-4 border border-gray-200 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow">
+                <div class="flex items-center justify-between mb-2">
+                    <h3 class="text-base font-bold text-gray-800">
+                        Leetcode Extractor
+                    </h3>
+                    <p class="text-xs text-gray-600 flex items-center">
+                        <i class="fas fa-calendar-alt w-4 h-4 mr-1"></i>
+                        Apr 2025
+                    </p>
+                </div>
+                <ul class="text-xs space-y-2">
+                    <li class="flex items-start">
+                        <span class="text-blue-600 mr-2">•</span>
+                        <span>Developed a tool to extract data from Leetcode, enabling users
+                            without premium access to search, filter, and sort problems by
+                            companies and other parameters, and access editorials.</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-link w-4 h-4 mr-2 text-blue-600"></i>
+                        <span><span class="font-bold">Link:</span>
+                            <a href="https://simpleandsmart.org"
+                                class="text-blue-600 hover:underline">simpleandsmart.org</a></span>
+                    </li>
+                </ul>
             </div>
-            <p class="text-sm text-gray-600 mb-2">
-              <i class="fas fa-building mr-1 text-blue-600"></i>Microsoft
-            </p>
-            <ul class="text-sm space-y-2">
-              <li class="flex justify-between items-center">
-                <span class="flex items-center">
-                  <i class="fas fa-check-circle mr-2 text-blue-600"></i>
-                  <a
-                    href="https://learn.microsoft.com/en-us/credentials/skills/8ZA5U3DW/"
-                    target="_blank"
-                    class="text-blue-600 hover:underline"
-                    >AI Overview</a
-                  >
-                </span>
-                <span class="text-gray-600">8ZA5U3DW</span>
-              </li>
-              <li class="flex justify-between items-center">
-                <span class="flex items-center">
-                  <i class="fas fa-check-circle mr-2 text-blue-600"></i>
-                  <a
-                    href="https://learn.microsoft.com/en-us/credentials/skills/9YFJ72ZU/"
-                    target="_blank"
-                    class="text-blue-600 hover:underline"
-                    >Computer Vision</a
-                  >
-                </span>
-                <span class="text-gray-600">9YFJ72ZU</span>
-              </li>
-              <li class="flex justify-between items-center">
-                <span class="flex items-center">
-                  <i class="fas fa-check-circle mr-2 text-blue-600"></i>
-                  <a
-                    href="https://learn.microsoft.com/en-us/credentials/skills/YEMN3K3R/"
-                    target="_blank"
-                    class="text-blue-600 hover:underline"
-                    >Document Intelligence and Knowledge Mining</a
-                  >
-                </span>
-                <span class="text-gray-600">YEMN3K3R</span>
-              </li>
-              <li class="flex justify-between items-center">
-                <span class="flex items-center">
-                  <i class="fas fa-check-circle mr-2 text-blue-600"></i>
-                  <a
-                    href="https://learn.microsoft.com/en-us/credentials/skills/8ZA3XNUW/"
-                    target="_blank"
-                    class="text-blue-600 hover:underline"
-                    >Generative AI</a
-                  >
-                </span>
-                <span class="text-gray-600">8ZA3XNUW</span>
-              </li>
-              <li class="flex justify-between items-center">
-                <span class="flex items-center">
-                  <i class="fas fa-check-circle mr-2 text-blue-600"></i>
-                  <a
-                    href="https://learn.microsoft.com/en-us/credentials/skills/9YFJ72ZU/"
-                    target="_blank"
-                    class="text-blue-600 hover:underline"
-                    >Natural Language Processing</a
-                  >
-                </span>
-                <span class="text-gray-600">9YFJ72ZU</span>
-              </li>
-            </ul>
-          </div>
 
-          <!-- Microsoft Security -->
-          <div
-            class="bg-white border border-gray-200 rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow transform hover:-translate-y-1"
-          >
-            <div class="flex items-center justify-between mb-2">
-              <h3 class="text-base font-bold text-gray-800">
-                Microsoft Security Certifications
-              </h3>
-              <span
-                class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded"
-              >
-                <i class="fas fa-calendar-alt mr-1"></i>Apr 2025
-              </span>
+            <!-- A Linear Algebraic Approach to Determine a Common Ordered Scan Path -->
+            <div class="mb-4 border border-gray-200 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow">
+                <div class="flex items-center justify-between mb-2">
+                    <h3 class="text-base font-bold text-gray-800">
+                        Linear Algebraic Approach for Eye Gaze Scan Path
+                    </h3>
+                    <p class="text-xs text-gray-600 flex items-center">
+                        <i class="fas fa-calendar-alt w-4 h-4 mr-1"></i>
+                        Jan 2016 – Feb 2016
+                    </p>
+                </div>
+                <ul class="text-xs space-y-2">
+                    <li class="flex items-start">
+                        <span class="text-blue-600 mr-2">•</span>
+                        <span>Researched and developed a method to determine a common ordered
+                            scan path from eye gaze data of multiple users.</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-code w-4 h-4 mr-2 text-blue-600"></i>
+                        <span><span class="font-bold">Technologies Used:</span>
+                            <span
+                                class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded">Linear
+                                Programming</span></span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-link w-4 h-4 mr-2 text-blue-600"></i>
+                        <span><span class="font-bold">Associated with:</span> Indian
+                            Institute of Technology, Guwahati</span>
+                    </li>
+                </ul>
             </div>
-            <p class="text-sm text-gray-600 mb-2">
-              <i class="fas fa-building mr-1 text-blue-600"></i>Microsoft
-            </p>
-            <ul class="text-sm space-y-2">
-              <li class="flex justify-between items-center">
-                <span class="flex items-center">
-                  <i class="fas fa-check-circle mr-2 text-blue-600"></i>
-                  <a
-                    href="https://learn.microsoft.com/en-us/credentials/skills/4G5Q4Z4K/"
-                    target="_blank"
-                    class="text-blue-600 hover:underline"
-                    >Enhance Security Operations using Microsoft Security
-                    Copilot</a
-                  >
-                </span>
-                <span class="text-gray-600">4G5Q4Z4K</span>
-              </li>
-              <li class="flex justify-between items-center">
-                <span class="flex items-center">
-                  <i class="fas fa-check-circle mr-2 text-blue-600"></i>
-                  <a
-                    href="https://learn.microsoft.com/en-us/credentials/skills/XQVWX3RY/"
-                    target="_blank"
-                    class="text-blue-600 hover:underline"
-                    >SC-200: Mitigate Threats using Microsoft Security
-                    Copilot</a
-                  >
-                </span>
-                <span class="text-gray-600">XQVWX3RY</span>
-              </li>
-            </ul>
-          </div>
 
-          <!-- Google Cloud Security Challenge -->
-          <div
-            class="bg-white border border-gray-200 rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow transform hover:-translate-y-1"
-          >
-            <div class="flex items-center justify-between mb-2">
-              <h3 class="text-base font-bold text-gray-800">
-                Cloud Security Challenge
-              </h3>
-              <span
-                class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded"
-              >
-                <i class="fas fa-calendar-alt mr-1"></i>Jan 2022
-              </span>
+            <!-- An Automated Scoring Application -->
+            <div class="mb-4 border border-gray-200 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow">
+                <div class="flex items-center justify-between mb-2">
+                    <h3 class="text-base font-bold text-gray-800">
+                        Automated Scoring Application for Student Essays
+                    </h3>
+                    <p class="text-xs text-gray-600 flex items-center">
+                        <i class="fas fa-calendar-alt w-4 h-4 mr-1"></i>
+                        Dec 2016 – May 2017
+                    </p>
+                </div>
+                <ul class="text-xs space-y-2">
+                    <li class="flex items-start">
+                        <span class="text-blue-600 mr-2">•</span>
+                        <span>Designed an application to automatically score student essays
+                            and short answers using NLP techniques.</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-code w-4 h-4 mr-2 text-blue-600"></i>
+                        <span><span class="font-bold">Technologies Used:</span>
+                            <span
+                                class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded mr-1">Python</span><span
+                                class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded">NLTK</span></span>
+                    </li>
+                </ul>
             </div>
-            <p class="text-sm text-gray-600 mb-2">
-              <i class="fas fa-building mr-1 text-blue-600"></i>Google Cloud
-              Skills Boost
-            </p>
-            <ul class="text-sm space-y-2">
-              <li class="flex items-center">
-                <span class="flex items-center">
-                  <i class="fas fa-check-circle mr-2 text-blue-600"></i>
-                  <a
-                    href="https://www.cloudskillsboost.google/public_profiles/50f75d79-d693-42b4-b78a-57eb24d59d9d/badges/2735376"
-                    target="_blank"
-                    class="text-blue-600 hover:underline"
-                    >Bonus</a
-                  >
-                </span>
-              </li>
-              <li class="flex items-center">
-                <span class="flex items-center">
-                  <i class="fas fa-check-circle mr-2 text-blue-600"></i>
-                  <a
-                    href="https://www.cloudskillsboost.google/public_profiles/50f75d79-d693-42b4-b78a-57eb24d59d9d/badges/2735064"
-                    target="_blank"
-                    class="text-blue-600 hover:underline"
-                    >Level 1</a
-                  >
-                </span>
-              </li>
-              <li class="flex items-center">
-                <span class="flex items-center">
-                  <i class="fas fa-check-circle mr-2 text-blue-600"></i>
-                  <a
-                    href="https://www.cloudskillsboost.google/public_profiles/50f75d79-d693-42b4-b78a-57eb24d59d9d/badges/2735065"
-                    target="_blank"
-                    class="text-blue-600 hover:underline"
-                    >Level 2</a
-                  >
-                </span>
-              </li>
-              <li class="flex items-center">
-                <span class="flex items-center">
-                  <i class="fas fa-check-circle mr-2 text-blue-600"></i>
-                  <a
-                    href="https://www.cloudskillsboost.google/public_profiles/50f75d79-d693-42b4-b78a-57eb24d59d9d/badges/2735066"
-                    target="_blank"
-                    class="text-blue-600 hover:underline"
-                    >Level 3</a
-                  >
-                </span>
-              </li>
-            </ul>
-          </div>
 
-          <!-- HackerRank Certifications -->
-          <div
-            class="bg-white border border-gray-200 rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow transform hover:-translate-y-1"
-          >
-            <div class="flex items-center justify-between mb-2">
-              <h3 class="text-base font-bold text-gray-800">
-                Programming Skills
-              </h3>
-              <span
-                class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded"
-              >
-                <i class="fas fa-calendar-alt mr-1"></i>Jun–Jul 2020
-              </span>
+            <!-- Video Categorization for Scene Change Detection -->
+            <div class="mb-4 border border-gray-200 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow">
+                <div class="flex items-center justify-between mb-2">
+                    <h3 class="text-base font-bold text-gray-800">
+                        Video Categorization for Scene Change Detection
+                    </h3>
+                    <p class="text-xs text-gray-600 flex items-center">
+                        <i class="fas fa-calendar-alt w-4 h-4 mr-1"></i>
+                        Dec 2015 – Apr 2017
+                    </p>
+                </div>
+                <ul class="text-xs space-y-2">
+                    <li class="flex items-start">
+                        <span class="text-blue-600 mr-2">•</span>
+                        <span>Built a system to categorize videos by detecting scene changes
+                            and identifying characters in movies.</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-code w-4 h-4 mr-2 text-blue-600"></i>
+                        <span><span class="font-bold">Technologies Used:</span>
+                            <span
+                                class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded mr-1">MATLAB</span><span
+                                class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded mr-1">XILINX</span><span
+                                class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded">ModelSim</span></span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-link w-4 h-4 mr-2 text-blue-600"></i>
+                        <span><span class="font-bold">Associated with:</span> Kalyani
+                            Government Engineering College</span>
+                    </li>
+                </ul>
             </div>
-            <p class="text-sm text-gray-600 mb-2">
-              <i class="fas fa-building mr-1 text-blue-600"></i>HackerRank
-            </p>
-            <ul class="text-sm space-y-2">
-              <li class="flex justify-between items-center">
-                <span class="flex items-center">
-                  <i class="fas fa-check-circle mr-2 text-blue-600"></i>
-                  <a
-                    href="https://www.hackerrank.com/certificates/de26feb88556"
-                    target="_blank"
-                    class="text-blue-600 hover:underline"
-                    >JavaScript (Basic)</a
-                  >
-                </span>
-                <span class="text-gray-600">de26feb88556</span>
-              </li>
-              <li class="flex justify-between items-center">
-                <span class="flex items-center">
-                  <i class="fas fa-check-circle mr-2 text-blue-600"></i>
-                  <a
-                    href="https://www.hackerrank.com/certificates/6da868c90c7f"
-                    target="_blank"
-                    class="text-blue-600 hover:underline"
-                    >Python (Basic)</a
-                  >
-                </span>
-                <span class="text-gray-600">6da868c90c7f</span>
-              </li>
-              <li class="flex justify-between items-center">
-                <span class="flex items-center">
-                  <i class="fas fa-check-circle mr-2 text-blue-600"></i>
-                  <a
-                    href="https://www.hackerrank.com/certificates/317e14383218"
-                    target="_blank"
-                    class="text-blue-600 hover:underline"
-                    >Angular (Basic)</a
-                  >
-                </span>
-                <span class="text-gray-600">317e14383218</span>
-              </li>
-              <li class="flex justify-between items-center">
-                <span class="flex items-center">
-                  <i class="fas fa-check-circle mr-2 text-blue-600"></i>
-                  <a
-                    href="https://www.hackerrank.com/certificates/806f322b2f00"
-                    target="_blank"
-                    class="text-blue-600 hover:underline"
-                    >Problem Solving (Basic)</a
-                  >
-                </span>
-                <span class="text-gray-600">806f322b2f00</span>
-              </li>
-            </ul>
-          </div>
 
-          <!-- Coursera Certifications -->
-          <div
-            class="bg-white border border-gray-200 rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow transform hover:-translate-y-1"
-          >
-            <div class="flex items-center justify-between mb-2">
-              <h3 class="text-base font-bold text-gray-800">
-                Data Science Specialization
-              </h3>
-              <span
-                class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded"
-              >
-                <i class="fas fa-calendar-alt mr-1"></i>Mar 2019
-              </span>
+            <!-- Object Identification through Edge Detection -->
+            <div class="mb-4 border border-gray-200 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow">
+                <div class="flex items-center justify-between mb-2">
+                    <h3 class="text-base font-bold text-gray-800">
+                        Object Identification Using Canny Edge Detection
+                    </h3>
+                    <p class="text-xs text-gray-600 flex items-center">
+                        <i class="fas fa-calendar-alt w-4 h-4 mr-1"></i>
+                        Dec 2016 – Apr 2017
+                    </p>
+                </div>
+                <ul class="text-xs space-y-2">
+                    <li class="flex items-start">
+                        <span class="text-blue-600 mr-2">•</span>
+                        <span>Developed a system to identify objects in images using the
+                            Canny Edge Detection algorithm.</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-code w-4 h-4 mr-2 text-blue-600"></i>
+                        <span><span class="font-bold">Technologies Used:</span>
+                            <span
+                                class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded">MATLAB</span></span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-link w-4 h-4 mr-2 text-blue-600"></i>
+                        <span><span class="font-bold">Associated with:</span> Kalyani
+                            Government Engineering College</span>
+                    </li>
+                </ul>
             </div>
-            <p class="text-sm text-gray-600 mb-2">
-              <i class="fas fa-building mr-1 text-blue-600"></i>Coursera
-            </p>
-            <ul class="text-sm space-y-2">
-              <li class="flex items-center">
-                <span class="flex items-center">
-                  <i class="fas fa-check-circle mr-2 text-blue-600"></i>
-                  <a
-                    href="https://www.coursera.org/account/accomplishments/certificate/UTRMTSPV4S4Z"
-                    target="_blank"
-                    class="text-blue-600 hover:underline"
-                    >Data Science Orientation</a
-                  >
-                </span>
-              </li>
-              <li class="flex items-center">
-                <span class="flex items-center">
-                  <i class="fas fa-check-circle mr-2 text-blue-600"></i>
-                  <a
-                    href="https://www.coursera.org/account/accomplishments/certificate/BPCXRGJPRFMY"
-                    target="_blank"
-                    class="text-blue-600 hover:underline"
-                    >The Data Scientist’s Toolbox</a
-                  >
-                </span>
-              </li>
-              <li class="flex items-center">
-                <span class="flex items-center">
-                  <i class="fas fa-check-circle mr-2 text-blue-600"></i>
-                  <a
-                    href="https://www.coursera.org/account/accomplishments/certificate/9FQKNK3PMJ84"
-                    target="_blank"
-                    class="text-blue-600 hover:underline"
-                    >What is Data Science? (IBM)</a
-                  >
-                </span>
-              </li>
-            </ul>
-          </div>
 
-          <!-- Udemy Certifications -->
-          <div
-            class="bg-white border border-gray-200 rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow transform hover:-translate-y-1"
-          >
-            <div class="flex items-center justify-between mb-2">
-              <h3 class="text-base font-bold text-gray-800">Web Development</h3>
-              <span
-                class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded"
-              >
-                <i class="fas fa-calendar-alt mr-1"></i>Jun–Jul 2017
-              </span>
+            <!-- A Bar Charts Application -->
+            <div class="mb-4 border border-gray-200 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow">
+                <div class="flex items-center justify-between mb-2">
+                    <h3 class="text-base font-bold text-gray-800">
+                        A Bar Charts Application
+                    </h3>
+                    <p class="text-xs text-gray-600 flex items-center">
+                        <i class="fas fa-calendar-alt w-4 h-4 mr-1"></i>
+                        Oct 2017
+                    </p>
+                </div>
+                <ul class="text-xs space-y-2">
+                    <li class="flex items-start">
+                        <span class="text-blue-600 mr-2">•</span>
+                        <span>Developed a web application to create and visualize bar charts
+                            with interactive features.</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-code w-4 h-4 mr-2 text-blue-600"></i>
+                        <span><span class="font-bold">Technologies Used:</span>
+                            <span
+                                class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded mr-1">ReactJS</span><span
+                                class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded mr-1">HTML5</span><span
+                                class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded">Bootstrap3</span></span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-link w-4 h-4 mr-2 text-blue-600"></i>
+                        <span><span class="font-bold">GitHub:</span>
+                            <a href="https://github.com/souviknandi24/bar-charts"
+                                class="text-blue-600 hover:underline">github.com/souviknandi24/bar-charts</a></span>
+                    </li>
+                </ul>
             </div>
-            <p class="text-sm text-gray-600 mb-2">
-              <i class="fas fa-building mr-1 text-blue-600"></i>Udemy
-            </p>
-            <ul class="text-sm space-y-2">
-              <li class="flex justify-between items-center">
-                <span class="flex items-center">
-                  <i class="fas fa-check-circle mr-2 text-blue-600"></i>
-                  <a
-                    href="https://www.udemy.com/certificate/UC-CHHPBZEO/"
-                    target="_blank"
-                    class="text-blue-600 hover:underline"
-                    >Bootstrap 4 Rapid Web Development</a
-                  >
-                </span>
-                <span class="text-gray-600">UC-CHHPBZEO</span>
-              </li>
-              <li class="flex justify-between items-center">
-                <span class="flex items-center">
-                  <i class="fas fa-check-circle mr-2 text-blue-600"></i>
-                  <a
-                    href="https://www.udemy.com/certificate/UC-0K6N4E62/"
-                    target="_blank"
-                    class="text-blue-600 hover:underline"
-                    >JavaScript for Web Development Beginners</a
-                  >
-                </span>
-                <span class="text-gray-600">UC-0K6N4E62</span>
-              </li>
-            </ul>
-          </div>
 
-          <!-- DataCamp
+            <!-- An Event Task Management Webapp -->
+            <div class="mb-4 border border-gray-200 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow">
+                <div class="flex items-center justify-between mb-2">
+                    <h3 class="text-base font-bold text-gray-800">
+                        An Event Task Management Webapp
+                    </h3>
+                    <p class="text-xs text-gray-600 flex items-center">
+                        <i class="fas fa-calendar-alt w-4 h-4 mr-1"></i>
+                        Sep 2017
+                    </p>
+                </div>
+                <ul class="text-xs space-y-2">
+                    <li class="flex items-start">
+                        <span class="text-blue-600 mr-2">•</span>
+                        <span>Built a web application to manage tasks and schedules for
+                            events, improving team coordination.</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-code w-4 h-4 mr-2 text-blue-600"></i>
+                        <span><span class="font-bold">Technologies Used:</span>
+                            <span
+                                class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded mr-1">Ruby
+                                on Rails</span><span
+                                class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded mr-1">MySQL</span><span
+                                class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded mr-1">HTML5</span><span
+                                class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded">Bootstrap3</span></span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-link w-4 h-4 mr-2 text-blue-600"></i>
+                        <span><span class="font-bold">GitHub:</span>
+                            <a href="https://github.com/souviknandi24/eventask"
+                                class="text-blue-600 hover:underline">github.com/souviknandi24/eventask</a></span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Online Job Portal -->
+            <div class="mb-4 border border-gray-200 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow">
+                <div class="flex items-center justify-between mb-2">
+                    <h3 class="text-base font-bold text-gray-800">Online Job Portal</h3>
+                    <p class="text-xs text-gray-600 flex items-center">
+                        <i class="fas fa-calendar-alt w-4 h-4 mr-1"></i>
+                        Apr 2017
+                    </p>
+                </div>
+                <ul class="text-xs space-y-2">
+                    <li class="flex items-start">
+                        <span class="text-blue-600 mr-2">•</span>
+                        <span>Created a platform for job seekers to search and filter
+                            relevant job postings efficiently.</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-code w-4 h-4 mr-2 text-blue-600"></i>
+                        <span><span class="font-bold">Technologies Used:</span>
+                            <span
+                                class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded mr-1">PHP</span><span
+                                class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded mr-1">MySQL</span><span
+                                class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded mr-1">HTML5</span><span
+                                class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded mr-1">CSS3</span><span
+                                class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded mr-1">Bootstrap3</span><span
+                                class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded">JavaScript</span></span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Certifications -->
+        <section class="mb-6">
+            <div class="flex items-center mb-4">
+                <h2 class="text-md font-bold text-blue-600 flex items-center">
+                    <i class="fas fa-certificate mr-2 text-blue-600"></i>Certifications
+                </h2>
+            </div>
+            <hr class="border-b border-grey-600 mb-6" />
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <!-- Microsoft Azure AI Fundamentals -->
+                <div
+                    class="bg-white border border-gray-200 rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow transform hover:-translate-y-1">
+                    <div class="flex items-center justify-between mb-2">
+                        <h3 class="text-base font-bold text-gray-800">
+                            Microsoft Azure AI Fundamentals
+                        </h3>
+                        <span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded">
+                            <i class="fas fa-calendar-alt mr-1"></i>Apr 2025
+                        </span>
+                    </div>
+                    <p class="text-xs text-gray-600 mb-2">
+                        <i class="fas fa-building mr-1 text-blue-600"></i>Microsoft
+                    </p>
+                    <ul class="text-xs space-y-2">
+                        <li class="flex justify-between items-center">
+                            <span class="flex items-center">
+                                <i class="fas fa-check-circle mr-2 text-blue-600"></i>
+                                <a href="https://learn.microsoft.com/en-us/credentials/skills/8ZA5U3DW/" target="_blank"
+                                    class="text-blue-600 hover:underline">AI Overview</a>
+                            </span>
+                            <span class="text-gray-600">8ZA5U3DW</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="flex items-center">
+                                <i class="fas fa-check-circle mr-2 text-blue-600"></i>
+                                <a href="https://learn.microsoft.com/en-us/credentials/skills/9YFJ72ZU/" target="_blank"
+                                    class="text-blue-600 hover:underline">Computer Vision</a>
+                            </span>
+                            <span class="text-gray-600">9YFJ72ZU</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="flex items-center">
+                                <i class="fas fa-check-circle mr-2 text-blue-600"></i>
+                                <a href="https://learn.microsoft.com/en-us/credentials/skills/YEMN3K3R/" target="_blank"
+                                    class="text-blue-600 hover:underline">Document Intelligence and Knowledge Mining</a>
+                            </span>
+                            <span class="text-gray-600">YEMN3K3R</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="flex items-center">
+                                <i class="fas fa-check-circle mr-2 text-blue-600"></i>
+                                <a href="https://learn.microsoft.com/en-us/credentials/skills/8ZA3XNUW/" target="_blank"
+                                    class="text-blue-600 hover:underline">Generative AI</a>
+                            </span>
+                            <span class="text-gray-600">8ZA3XNUW</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="flex items-center">
+                                <i class="fas fa-check-circle mr-2 text-blue-600"></i>
+                                <a href="https://learn.microsoft.com/en-us/credentials/skills/9YFJ72ZU/" target="_blank"
+                                    class="text-blue-600 hover:underline">Natural Language Processing</a>
+                            </span>
+                            <span class="text-gray-600">9YFJ72ZU</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Microsoft Security -->
+                <div
+                    class="bg-white border border-gray-200 rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow transform hover:-translate-y-1">
+                    <div class="flex items-center justify-between mb-2">
+                        <h3 class="text-base font-bold text-gray-800">
+                            Microsoft Security Certifications
+                        </h3>
+                        <span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded">
+                            <i class="fas fa-calendar-alt mr-1"></i>Apr 2025
+                        </span>
+                    </div>
+                    <p class="text-xs text-gray-600 mb-2">
+                        <i class="fas fa-building mr-1 text-blue-600"></i>Microsoft
+                    </p>
+                    <ul class="text-xs space-y-2">
+                        <li class="flex justify-between items-center">
+                            <span class="flex items-center">
+                                <i class="fas fa-check-circle mr-2 text-blue-600"></i>
+                                <a href="https://learn.microsoft.com/en-us/credentials/skills/4G5Q4Z4K/" target="_blank"
+                                    class="text-blue-600 hover:underline">Enhance Security Operations using Microsoft
+                                    Security
+                                    Copilot</a>
+                            </span>
+                            <span class="text-gray-600">4G5Q4Z4K</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="flex items-center">
+                                <i class="fas fa-check-circle mr-2 text-blue-600"></i>
+                                <a href="https://learn.microsoft.com/en-us/credentials/skills/XQVWX3RY/" target="_blank"
+                                    class="text-blue-600 hover:underline">SC-200: Mitigate Threats using Microsoft
+                                    Security
+                                    Copilot</a>
+                            </span>
+                            <span class="text-gray-600">XQVWX3RY</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Google Cloud Security Challenge -->
+                <div
+                    class="bg-white border border-gray-200 rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow transform hover:-translate-y-1">
+                    <div class="flex items-center justify-between mb-2">
+                        <h3 class="text-base font-bold text-gray-800">
+                            Cloud Security Challenge
+                        </h3>
+                        <span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded">
+                            <i class="fas fa-calendar-alt mr-1"></i>Jan 2022
+                        </span>
+                    </div>
+                    <p class="text-xs text-gray-600 mb-2">
+                        <i class="fas fa-building mr-1 text-blue-600"></i>Google Cloud
+                        Skills Boost
+                    </p>
+                    <ul class="text-xs space-y-2">
+                        <li class="flex items-center">
+                            <span class="flex items-center">
+                                <i class="fas fa-check-circle mr-2 text-blue-600"></i>
+                                <a href="https://www.cloudskillsboost.google/public_profiles/50f75d79-d693-42b4-b78a-57eb24d59d9d/badges/2735376"
+                                    target="_blank" class="text-blue-600 hover:underline">Bonus</a>
+                            </span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="flex items-center">
+                                <i class="fas fa-check-circle mr-2 text-blue-600"></i>
+                                <a href="https://www.cloudskillsboost.google/public_profiles/50f75d79-d693-42b4-b78a-57eb24d59d9d/badges/2735064"
+                                    target="_blank" class="text-blue-600 hover:underline">Level 1</a>
+                            </span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="flex items-center">
+                                <i class="fas fa-check-circle mr-2 text-blue-600"></i>
+                                <a href="https://www.cloudskillsboost.google/public_profiles/50f75d79-d693-42b4-b78a-57eb24d59d9d/badges/2735065"
+                                    target="_blank" class="text-blue-600 hover:underline">Level 2</a>
+                            </span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="flex items-center">
+                                <i class="fas fa-check-circle mr-2 text-blue-600"></i>
+                                <a href="https://www.cloudskillsboost.google/public_profiles/50f75d79-d693-42b4-b78a-57eb24d59d9d/badges/2735066"
+                                    target="_blank" class="text-blue-600 hover:underline">Level 3</a>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- HackerRank Certifications -->
+                <div
+                    class="bg-white border border-gray-200 rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow transform hover:-translate-y-1">
+                    <div class="flex items-center justify-between mb-2">
+                        <h3 class="text-base font-bold text-gray-800">
+                            Programming Skills
+                        </h3>
+                        <span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded">
+                            <i class="fas fa-calendar-alt mr-1"></i>Jun–Jul 2020
+                        </span>
+                    </div>
+                    <p class="text-xs text-gray-600 mb-2">
+                        <i class="fas fa-building mr-1 text-blue-600"></i>HackerRank
+                    </p>
+                    <ul class="text-xs space-y-2">
+                        <li class="flex justify-between items-center">
+                            <span class="flex items-center">
+                                <i class="fas fa-check-circle mr-2 text-blue-600"></i>
+                                <a href="https://www.hackerrank.com/certificates/de26feb88556" target="_blank"
+                                    class="text-blue-600 hover:underline">JavaScript (Basic)</a>
+                            </span>
+                            <span class="text-gray-600">de26feb88556</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="flex items-center">
+                                <i class="fas fa-check-circle mr-2 text-blue-600"></i>
+                                <a href="https://www.hackerrank.com/certificates/6da868c90c7f" target="_blank"
+                                    class="text-blue-600 hover:underline">Python (Basic)</a>
+                            </span>
+                            <span class="text-gray-600">6da868c90c7f</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="flex items-center">
+                                <i class="fas fa-check-circle mr-2 text-blue-600"></i>
+                                <a href="https://www.hackerrank.com/certificates/317e14383218" target="_blank"
+                                    class="text-blue-600 hover:underline">Angular (Basic)</a>
+                            </span>
+                            <span class="text-gray-600">317e14383218</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="flex items-center">
+                                <i class="fas fa-check-circle mr-2 text-blue-600"></i>
+                                <a href="https://www.hackerrank.com/certificates/806f322b2f00" target="_blank"
+                                    class="text-blue-600 hover:underline">Problem Solving (Basic)</a>
+                            </span>
+                            <span class="text-gray-600">806f322b2f00</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Coursera Certifications -->
+                <div
+                    class="bg-white border border-gray-200 rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow transform hover:-translate-y-1">
+                    <div class="flex items-center justify-between mb-2">
+                        <h3 class="text-base font-bold text-gray-800">
+                            Data Science Specialization
+                        </h3>
+                        <span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded">
+                            <i class="fas fa-calendar-alt mr-1"></i>Mar 2019
+                        </span>
+                    </div>
+                    <p class="text-xs text-gray-600 mb-2">
+                        <i class="fas fa-building mr-1 text-blue-600"></i>Coursera
+                    </p>
+                    <ul class="text-xs space-y-2">
+                        <li class="flex items-center">
+                            <span class="flex items-center">
+                                <i class="fas fa-check-circle mr-2 text-blue-600"></i>
+                                <a href="https://www.coursera.org/account/accomplishments/certificate/UTRMTSPV4S4Z"
+                                    target="_blank" class="text-blue-600 hover:underline">Data Science Orientation</a>
+                            </span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="flex items-center">
+                                <i class="fas fa-check-circle mr-2 text-blue-600"></i>
+                                <a href="https://www.coursera.org/account/accomplishments/certificate/BPCXRGJPRFMY"
+                                    target="_blank" class="text-blue-600 hover:underline">The Data Scientist’s
+                                    Toolbox</a>
+                            </span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="flex items-center">
+                                <i class="fas fa-check-circle mr-2 text-blue-600"></i>
+                                <a href="https://www.coursera.org/account/accomplishments/certificate/9FQKNK3PMJ84"
+                                    target="_blank" class="text-blue-600 hover:underline">What is Data Science?
+                                    (IBM)</a>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Udemy Certifications -->
+                <div
+                    class="bg-white border border-gray-200 rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow transform hover:-translate-y-1">
+                    <div class="flex items-center justify-between mb-2">
+                        <h3 class="text-base font-bold text-gray-800">Web Development</h3>
+                        <span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded">
+                            <i class="fas fa-calendar-alt mr-1"></i>Jun–Jul 2017
+                        </span>
+                    </div>
+                    <p class="text-xs text-gray-600 mb-2">
+                        <i class="fas fa-building mr-1 text-blue-600"></i>Udemy
+                    </p>
+                    <ul class="text-xs space-y-2">
+                        <li class="flex justify-between items-center">
+                            <span class="flex items-center">
+                                <i class="fas fa-check-circle mr-2 text-blue-600"></i>
+                                <a href="https://www.udemy.com/certificate/UC-CHHPBZEO/" target="_blank"
+                                    class="text-blue-600 hover:underline">Bootstrap 4 Rapid Web Development</a>
+                            </span>
+                            <span class="text-gray-600">UC-CHHPBZEO</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="flex items-center">
+                                <i class="fas fa-check-circle mr-2 text-blue-600"></i>
+                                <a href="https://www.udemy.com/certificate/UC-0K6N4E62/" target="_blank"
+                                    class="text-blue-600 hover:underline">JavaScript for Web Development Beginners</a>
+                            </span>
+                            <span class="text-gray-600">UC-0K6N4E62</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- DataCamp
       <div class="bg-white border border-gray-200 rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow transform hover:-translate-y-1">
         <div class="flex items-center justify-between mb-2">
           <h3 class="text-base font-bold text-gray-800">Python for Data Science</h3>
@@ -1523,10 +993,10 @@
             <i class="fas fa-calendar-alt mr-1"></i>Not Specified
           </span>
         </div>
-        <p class="text-sm text-gray-600 mb-2">
+        <p class="text-xs text-gray-600 mb-2">
           <i class="fas fa-building mr-1 text-blue-600"></i>DataCamp
         </p>
-        <ul class="text-sm space-y-2">
+        <ul class="text-xs space-y-2">
           <li class="flex justify-between items-center">
             <span class="flex items-center">
               <i class="fas fa-check-circle mr-2 text-blue-600"></i>
@@ -1537,98 +1007,84 @@
         </ul>
       </div> -->
 
-          <!-- NPTEL -->
-          <div
-            class="bg-white border border-gray-200 rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow transform hover:-translate-y-1"
-          >
-            <div class="flex items-center justify-between mb-2">
-              <h3 class="text-base font-bold text-gray-800">
-                Programming in C
-              </h3>
-              <span
-                class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded"
-              >
-                <i class="fas fa-calendar-alt mr-1"></i>Dec 2014
-              </span>
+                <!-- NPTEL -->
+                <div
+                    class="bg-white border border-gray-200 rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow transform hover:-translate-y-1">
+                    <div class="flex items-center justify-between mb-2">
+                        <h3 class="text-base font-bold text-gray-800">
+                            Programming in C
+                        </h3>
+                        <span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded">
+                            <i class="fas fa-calendar-alt mr-1"></i>Dec 2014
+                        </span>
+                    </div>
+                    <p class="text-xs text-gray-600 mb-2">
+                        <i class="fas fa-building mr-1 text-blue-600"></i>NPTEL
+                    </p>
+                    <ul class="text-xs space-y-2">
+                        <li class="flex items-center">
+                            <span class="flex items-center">
+                                <i class="fas fa-check-circle mr-2 text-blue-600"></i>
+                                <a href="https://archive.nptel.ac.in/noc/Ecertificate/?q=noc14-cs02/NPTEL14CS02002372.jpg"
+                                    target="_blank" class="text-blue-600 hover:underline">Introduction to Programming in
+                                    C</a>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <p class="text-sm text-gray-600 mb-2">
-              <i class="fas fa-building mr-1 text-blue-600"></i>NPTEL
-            </p>
-            <ul class="text-sm space-y-2">
-              <li class="flex items-center">
-                <span class="flex items-center">
-                  <i class="fas fa-check-circle mr-2 text-blue-600"></i>
-                  <a
-                    href="https://archive.nptel.ac.in/noc/Ecertificate/?q=noc14-cs02/NPTEL14CS02002372.jpg"
-                    target="_blank"
-                    class="text-blue-600 hover:underline"
-                    >Introduction to Programming in C</a
-                  >
-                </span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- Languages -->
-      <section class="mb-6">
-        <div class="flex items-center mb-4">
-          <h2 class="text-lg font-bold text-blue-600 flex items-center">
-            <i class="fas fa-language mr-2 text-blue-600"></i>Languages
-          </h2>
-        </div>
-        <hr class="border-b border-grey-600 mb-6" />
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <!-- English -->
-          <div
-            class="bg-white border border-gray-200 rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow transform hover:-translate-y-1"
-          >
-            <div class="flex items-center justify-between">
-              <div class="flex items-center">
-                <i class="fas fa-globe mr-2 text-blue-600"></i>
-                <span class="text-sm font-semibold text-gray-800">English</span>
-              </div>
-              <span
-                class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded"
-                >Fluent</span
-              >
+        <!-- Languages -->
+        <section class="mb-6">
+            <div class="flex items-center mb-4">
+                <h2 class="text-md font-bold text-blue-600 flex items-center">
+                    <i class="fas fa-language mr-2 text-blue-600"></i>Languages
+                </h2>
             </div>
-          </div>
+            <hr class="border-b border-grey-600 mb-6" />
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <!-- English -->
+                <div
+                    class="bg-white border border-gray-200 rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow transform hover:-translate-y-1">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <i class="fas fa-globe mr-2 text-blue-600"></i>
+                            <span class="text-xs font-semibold text-gray-800">English</span>
+                        </div>
+                        <span
+                            class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded">Fluent</span>
+                    </div>
+                </div>
 
-          <!-- Hindi -->
-          <div
-            class="bg-white border border-gray-200 rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow transform hover:-translate-y-1"
-          >
-            <div class="flex items-center justify-between">
-              <div class="flex items-center">
-                <i class="fas fa-globe mr-2 text-blue-600"></i>
-                <span class="text-sm font-semibold text-gray-800">Hindi</span>
-              </div>
-              <span
-                class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded"
-                >Fluent</span
-              >
-            </div>
-          </div>
+                <!-- Hindi -->
+                <div
+                    class="bg-white border border-gray-200 rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow transform hover:-translate-y-1">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <i class="fas fa-globe mr-2 text-blue-600"></i>
+                            <span class="text-xs font-semibold text-gray-800">Hindi</span>
+                        </div>
+                        <span
+                            class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded">Fluent</span>
+                    </div>
+                </div>
 
-          <!-- Bengali -->
-          <div
-            class="bg-white border border-gray-200 rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow transform hover:-translate-y-1"
-          >
-            <div class="flex items-center justify-between">
-              <div class="flex items-center">
-                <i class="fas fa-globe mr-2 text-blue-600"></i>
-                <span class="text-sm font-semibold text-gray-800">Bengali</span>
-              </div>
-              <span
-                class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded"
-                >Proficient</span
-              >
+                <!-- Bengali -->
+                <div
+                    class="bg-white border border-gray-200 rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow transform hover:-translate-y-1">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <i class="fas fa-globe mr-2 text-blue-600"></i>
+                            <span class="text-xs font-semibold text-gray-800">Bengali</span>
+                        </div>
+                        <span
+                            class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded">Proficient</span>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </section>
+        </section>
     </div>
-  </body>
+</body>
+
 </html>
